@@ -1,0 +1,148 @@
+/* Master styles */
+body {
+  font-family: "Lato", sans-serif;
+  margin: 0px;
+}
+
+.server-container {
+  font-family: "Trebuchet MS", Verdana, sans-serif;
+  font-size: 16px;
+  background-color: dimgrey;
+  color: #696969;
+  padding: 3px;
+}
+
+.h1-container {
+  font-family: Georgia, serif;
+  border-bottom: 3px solid #cc9900;
+  color: #996600;
+  font-size: 30px;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 1fr;
+}
+
+/* Nav styles */
+
+.nav-wrapper {
+  display: flex;
+  justify-content: space-between;
+  padding: 38px;
+}
+
+.left-side {
+  display: flex;
+}
+
+.nav-wrapper > .left-side > div {
+  margin-right: 20px;
+  font-size: 0.9em;
+  text-transform: uppercase;
+}
+
+.nav-link-wrapper {
+  height: 22px;
+  border-bottom: 1px solid transparent;
+  transition: border-bottom o.5s;
+  padding: 5px;
+  padding-left: 15px;
+  padding-right: 15px;
+  background-color: #ffffff;
+}
+
+.nav-link-wrapper a {
+  color: #8a8a8a;
+  text-decoration: none;
+  transition: color 0.5s;
+  padding: 5px;
+  padding-left: 15px;
+  padding-right: 15px;
+  background-color: #ffffff;
+}
+
+.nav-link-wrapper:hover {
+  border-bottom: 1px solid chocolate;
+}
+
+.nav-link-wrapper a:hover {
+  color: chocolate;
+}
+
+.active-nav-link {
+  border-bottom: 1px solid chocolate;
+}
+.active-nav-link a {
+  color: chocolate !important;
+}
+/* Portfolio styles */
+
+.portfolio-items-wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+.portfolio-item-wrapper {
+  position: relative;
+}
+
+.portfolio-img-background {
+  height: 300px;
+  width: 100%;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.img-text-wrapper {
+  position: absolute;
+  top: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  text-align: center;
+  padding-left: 100px;
+  padding-right: 100px;
+}
+
+.logo-wrapper img {
+  width: 30%;
+  margin-bottom: 10px;
+}
+.img-text-wrapper .subtitle {
+  transition: 1s;
+  font-weight: 600;
+  color: transparent;
+}
+
+.img-text-wrapper:hover .subtitle {
+  font-weight: 600;
+  color: chocolate;
+}
+.img-darken {
+  transition: 1s;
+  filter: brightness(10%);
+}
+
+.two-column-wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+.profile-image-wrapper img {
+  width: 50%;
+}
+.profile-content-wrapper {
+  padding: 35px;
+}
+.profile-content-wrapper h1 {
+  color: chocolate;
+}
+.placeholder {
+  font-family: "Trebuchet MS", Verdana, sans-serif;
+  font-size: 16px;
+  background-color: #996600;
+  color: chocolate;
+  padding: 3px;
+}
